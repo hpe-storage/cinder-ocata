@@ -1,0 +1,9 @@
+---
+features:
+  - |
+    This adds following functionalities
+    Creating thin/dedup compresssed volume.
+    Retype for tpvv/tdvv volumes to be compressed.
+    igration of compressed volumes.
+    Create compressed volume from compressed volume/snapshot source
+    Compression support to create cg from source

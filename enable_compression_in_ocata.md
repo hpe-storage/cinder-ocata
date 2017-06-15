@@ -1,4 +1,4 @@
-# Instructions to enable 3PAR Compression Feature on Real Madrid Arrays in Openstack Ocata Release of Cinder
+# Instructions to enable Compression Feature on HPE 3PAR Cinder driver for Ocata in Openstack
 
 ## Pre-requisites
 

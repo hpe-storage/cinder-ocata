@@ -21,3 +21,12 @@ $ cp -R ~/hpe_cinder_ocata/* /opt/stack/cinder
 
 # Restart the cinder services
 ```
+## Notes for enableing compression on HPE 3PAR
+
+*	Compression is supported on only SSD disks and 8k, 20k series 3PAR array.
+* Minimium size of volume needed to enable compression is 16GB.
+* A full provisioned volume cannot be compressed, if a compression is enabled and provisioning type requested is full,
+the resulting volume defaults to thinly provisioned compress volume.
+*	For enabling compression through cinder, user must add hpe3par:compression as a key in Volumes types extra spec.
+Value for this key is a Boolean (true/false).
+Ex: hpe3par:compression =true
